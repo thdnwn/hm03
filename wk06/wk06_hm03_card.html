@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm03 : Card</title>
+		<style>
+			@keyframes textColorAnimation {
+			from { color : rgb(26, 94, 26); font-size: 400%; }
+			to { color : rgb(167, 47, 47); font-size: 300%; }
+			}
+			span {
+				animation-name: textColorAnimation;
+				animation-duration: 7s;
+				animation-iteration-count: infinite;
+			}
+			html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .header {
+            width: 100%;
+            height: 15%;
+            background-image: url("media/오래된카드.jpg");
+			background-position: top;
+			font-family: fantasy;
+			text-align: center;
+			
+        }
+
+        .nav {
+            width: 15%;
+            height: 95%;
+            float: left;
+            background-image: url("media/오래된카드.jpg");
+			background-position: top;
+        }
+
+        .section {
+            width: 70%;
+            height: 95%;
+            float: left;
+            background-image: url("media/카드.jpg");
+			background-position: center;
+        }
+
+        .aside {
+            width: 15%;
+            height: 95%;
+            float: left;
+            background-image: url("media/오래된카드.jpg");
+			background-position: top;
+        }
+
+        .footer {
+            width: 100%;
+            height: 15%;
+            clear: both;
+            background-image: url("media/오래된카드.jpg");
+			background-position: top;
+		}
+		p {
+				margin: auto;
+				transform: translateX(20%);
+				transform: translateY(6%);
+				background-image: url("media/배경.png");
+				background-position: center;
+				width: 500px;
+				height: 600px;
+				border: 20px solid rgb(30, 66, 30)/*border-width와 border-style 동시 지정 */
+			}
+			#round {
+				border-image: url("media/카드.jpg") 30 round;
+			}
+		
+		.text {
+			display: block;
+			position: absolute;
+			border: white;
+			font-style: oblique;
+			color: rgb(236, 202, 202);
+			left: 600px; 
+			top: 220px;
+		}
+		.text1 {
+			display: block;
+			position: absolute;
+			border: white;
+			font-style: oblique;
+			color:rgb(121, 71, 71);
+			left: 750px; 
+			top: 240px;
+		}
+		.text2 {
+			display: block;
+			position: absolute;
+			border: white;
+			font-style: oblique;
+			color: rgb(158, 62, 62);
+			left: 900px; 
+			top: 260px;
+		}
+		.text3 {
+			display: block;
+			position: absolute;
+			border: white;
+			font-style: oblique;
+			color: rgb(167, 8, 8);
+			left: 750px; 
+			top: 330px;
+		}
+		.text4 {
+			display: block;
+			position: absolute;
+			border: white;
+			font-style: oblique;
+			color: rgb(215, 216, 135);
+			left: 600px; 
+			top: 390px;
+		}
+		.text5 {
+			display: block;
+			position: absolute;
+			border: white;
+			font-style: oblique;
+			color: rgb(164, 170, 83);
+			left: 750px; 
+			top: 460px;
+		}
+		.text6 {
+			display: block;
+			position: absolute;
+			border: white;
+			font-style: oblique;
+			color: rgb(211, 208, 30);
+			left: 890px; 
+			top: 530px;
+		}
+		.text7 {
+			display: block;
+			position: absolute;
+			border: white;
+			font-style: oblique;
+			color: rgb(93, 126, 85);
+			left: 740px; 
+			top: 580px;
+		}
+		.text8 {
+			display: block;
+			position: absolute;
+			border: white;
+			font-style: oblique;
+			color: rgb(74, 146, 56);
+			left: 650px; 
+			top: 660px;
+		}
+		.text9 {
+			display: block;
+			position: absolute;
+			border: white;
+			font-style: oblique;
+			color: rgb(38, 112, 29);
+			left: 870px; 
+			top: 690px;
+		}
+			#fixed {
+				position: fixed;
+				top: 70px;
+				bottom: 10px;
+				width: 100px;
+				padding: 5px;
+				background: red;
+				color: white;
+			}
+			#hm03{
+                position: fixed;;
+				bottom: 10px;
+				right: 10px;
+				width: 40px;
+				padding: 5px;
+				background: rgb(30, 66, 30);
+				font-family: fantasy;
+				color: white;
+            }
+
+
+		</style>
+		<script></script>
+	</head>
+
+	<body>
+		<!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+		<header class="header"><span>Happy Hoildays</span></header>
+		<nav class="nav">
+		</nav>
+		<section class="section">
+			<div>
+				<p id="round">
+					<img src="media/메리클쓰.gif"
+				width="500" height="600">
+				</p>
+				<div class="text">
+				M
+				</div>
+				<div class="text1">
+				E
+				</div>
+				<div class="text2">
+				R
+				</div>
+				<div class="text3">
+				R
+				</div>
+				<div class="text4">
+				Y
+				</div>
+				<div class="text5">
+				X
+				</div>
+				<div class="text6">
+				―
+				</div>
+				<div class="text7">
+				M
+				</div>
+				<div class="text8">
+				A
+				</div>
+				<div class="text9">
+				S
+				</div>
+				</div>	
+				</section>
+	<aside class="aside">
+	</aside>
+	<footer class="footer">
+		<div id="hm03">
+			hm03
+			<audio src="media/크리스마스노래.mp3" 
+		 loop controls>
+			</audio>
+		</div>
+		</footer>	
+	</body>
+
+</html>
+
