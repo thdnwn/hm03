@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm03 : Semantic tag and form</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      h1 {
+        text-align: center;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      p {
+        color: rgb(212, 168, 212);
+      }
+      .header {
+        width: 100%;
+        height: 11%;
+        float: right;
+        background: rgb(212, 196, 238);
+      }
+      .nav {
+        width: 20%;
+        height: 75%;
+        float: left;
+        background: rgb(245, 237, 253);
+      }
+      .section {
+        width: 60%;
+        height: 75%;
+        float: left;
+        background: rgb(245, 237, 253);
+      }
+      .aside {
+        width: 20%;
+        height: 75%;
+        float: left;
+        background: rgb(245, 237, 253);
+      }
+      .footer {
+        width: 100%;
+        height: 14%;
+        clear: both;
+        background: rgb(212, 196, 238);
+      }
+      a:link {
+        color: rgb(245, 237, 253);
+      }
+    </style>
+    <script></script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <header class="header">
+      <h1><a href="https://github.com/thdnwn/hm03" style="text-decoration: none;">hm03</a></h1>
+    </header>
+
+    <nav class="nav">
+      <iframe
+      src="hm03_list.html"
+      name="left"
+      width="310"
+      height="550"
+    ></iframe>
+    </nav>
+
+    <section class="section" id="main">
+      <article>
+        <iframe src="hm03_main.html" 
+        name="right" 
+        width="920" 
+        height="550">
+        </iframe>
+      </article>
+    </section>
+
+    <aside class="aside">
+      <iframe
+      src="hm03_list2.html"
+      name="left"
+      width="310"
+      height="550"
+    ></iframe>
+    </aside>
+
+    <footer class="footer">
+      <p>
+        Copyright namu.wiki, TOPClass by hm03
+      </p>
+      <p>
+        <audio src="media/치누숲.mp3" controls autoplay loop ></audio>
+      </p>
+    </footer>
+  </body>
+</html>

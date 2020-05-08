@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm03 : Semantic tag and form</title>
+		<style>
+            h2 {
+                text-align: center;
+                color: thistle;
+            }
+            form {
+                text-align: center;
+            }
+            a:link {
+                color: thistle;
+            }
+		</style>
+		<script></script>
+    </head>
+    
+    <body>
+        <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+        <h2><a href="https://www.youtube.com/watch?v=LIQrhm2qk-k" target="main" style="text-decoration: none;">My Best 3
+        </a></h2>
+        <hr>
+        <form>
+            영화 : <input type="text" list="what"><br>
+                <datalist id="what">
+                    <option value="레디 플레이어 원">
+                    <option value="아이언맨">
+                    <option value="아바타">
+                </datalist> 
+            아티스트 : <input type="text" list="who"><br>
+                <datalist id="who">
+                    <option value="방탄소년단">
+                    <option value="샘 스미스">
+                    <option value="루엘">
+                </datalist>
+            게임 : <input type="text" list="game"><br>
+                <datalist id="game">
+                    <option value="오버워치">
+                    <option value="스타듀밸리">
+                </datalist>    
+        </form>
+    
+    </body>
+    
+</html>

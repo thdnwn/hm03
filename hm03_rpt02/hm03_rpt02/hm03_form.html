@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm03 : Semantic tag and form</title>
+		<style>
+		</style>
+		<script></script>
+    </head>
+    
+    <body>
+        <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+        <h3>회원가입</h3>
+        <hr>
+        <form>
+            <fieldset>
+             <legend>개인정보</legend>
+             <ul>
+                 <li>
+                     <label for="userid">아이디</label>
+                     <input id="userid" type="text" placeholder="이메일 주소" required>
+                 </li>
+                 <li>
+                    <label for="pass">비밀번호</label>
+                    <input id="pass" type="text" placeholder="비밀번호" required><br><br>
+                 </li>
+                 <hr>
+                 <br>
+                 <li>
+                    <label for="skill">스쿠버 다이빙 숙련도(상,중,하)</label>
+                    <input id="skill" type="range" min="1" max="3" step="1"><br><br>
+                    <input type="submit" value="로그인">
+                </li>
+             </ul>
+            </fieldset>
+        </form>
+    </body>
+
+</html>

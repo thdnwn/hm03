@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm03 : Semantic tag and form</title>
+		<style>
+			body {
+				text-align: center;
+				color: thistle;
+			}
+			h3 {
+				color: thistle;
+			}
+		</style>
+		<script>
+			function show() {
+				document.getElementById("fig").src="media/스쿠버다이빙.jpg";
+			}
+			function hide() {
+				document.getElementById("fig").src="media/스쿠버다이빙2.jpg";
+			}
+		</script>
+    </head>
+
+    <body>
+		<!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+		<h3 onmouseover="show()" onmouseout="hide()">
+			Scuba Diving Society
+		</h3>
+		<img id="fig" src="media/스쿠버다이빙2.jpg" width="300px" height="200px">
+		<br>
+		Q &amp; A 
+		<hr>
+		<details>
+			<summary>스쿠버 다이빙이란?</summary>
+			<p style="color: rgb(0, 66, 66);">
+                Self Contained Underwater Breathing Apparatus의 약자에 다이빙을 합쳐서 스쿠버 다이빙이라 부른다. 
+                즉, 물 속에서도 숨을 쉴 수 있게 해주는 장비를 착용하고 다이빙하는 것이다.
+			</p>
+        </details>
+        <details>
+			<summary>선택한 이유?</summary>
+			<p style="color: rgb(0, 66, 66);">
+				어렸을 때 수영을 잠시 배웠는데 재미도 있었고 수영장과 달리 바다 속은 어떨지 눈으로 직접 보고 싶다.
+			</p>
+		</details>
+		<details>
+			<summary>JM다이브 동호회는?</summary>
+			<p style="color: rgb(0, 66, 66);">
+				JM다이브를 이끌고 있는 이정민 강사는 5년애 걸쳐  걸쳐 *SDI(Scuba Diving International), TDI(Technical Divaing International) 강사 트레이너 자격증을 취득했다. 
+				세계 1%에 속하는 레벨로 교육을하고 자격증도 부여할 수 있다. 
+				주 1회 잠실 올림픽수영장에서 수영 교육을 실시한다.
+				이 동호회의 특징이라고 할 수 있는 지도 그리기는 각자가 인상 깊었던 부분을 그리는 것이다.
+				<a href="https://cafe.naver.com/laondive" target="main">JM다이브 홈페이지</a>에서 회원 가입 후 활동에 참여할 수 있다.
+				가입 비용은 없지만, 초급부터 고급 과정까지 난이도에 따라 교육비용은 상이하다.
+			</p>
+		</details>
+
+	</body>
+
+</html>

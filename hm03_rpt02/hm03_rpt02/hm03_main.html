@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm03 : Semantic tag and form</title>
+		<style>
+            h2 {
+                text-align: center;
+                color: thistle;
+            }
+            span {
+                animation-name: homepage;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+            }
+            #img {
+                background-image: url(media/앞.jpg);
+                width: 300px;
+                height: 350px;
+                background-size: 300px 350px;
+                transform: translateX(300px) translateY(45px);
+            }
+            #img:hover {
+                background-size: 300px 350px;
+                background-image: url(media/뒤.jpg);
+            }
+            @keyframes homepage {
+                0% {color: rgb(217, 213, 255);}
+                30% {color: white;}
+                50% {color: rgb(217, 213, 255);}
+                
+            }
+		</style>
+		<script></script>
+    </head>
+    
+    <body>
+        <h2><span>My Homepage</span></h2>
+        <hr>
+        <tr>
+            <td>
+                <div id="img"></div>
+            </td>
+        </tr>
+    </body>
+</html>
