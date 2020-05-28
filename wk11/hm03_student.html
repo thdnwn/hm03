@@ -35,7 +35,7 @@
       document.write("30613원 저금 후 잔액은 " + student.inquiry() + "<br><hr>");
 
       var current = new Date();
-      // 현재 시간을 가진 Date 객체 생성
+      // 현재 시간을 가진 Date 객체 생성 (오전, 오후에 따른 색차이)
       if (current.getHours() < 12)
         document.body.style.backgroundColor = "lightblue";
       else document.body.style.backgroundColor = "lightskyblue";
