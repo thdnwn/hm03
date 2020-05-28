@@ -1,0 +1,63 @@
+<head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm03 : Javascript object</title>
+    <style></style>
+    <script>
+      // 메소드로 사용할 2개의 함수 작성
+      function fill() { return (this.amount += 1); }
+      function consume() { return (this.amount -= 1); }
+
+      // 사용자 객체 만들기
+      var box = new Object;
+      box.color = "red";
+      box.size = 10;
+      box.amount = 0;
+      box.fill = fill;
+      box.consume = consume;
+    </script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <h3>hm03 box 객체 new object 사용출력</h3>
+    <hr />
+    <script>
+      var user = prompt("깜짝퀴즈!! 박스의 초기 amount 값을 예측해 보세요!", 0);
+      if(user == null) {
+        // 취소 버튼이 클릭된 경우
+        document.write("종료합니다.");
+      }
+      else {
+        // 객체 활용
+        document.write("Box : ");
+        document.write(box.color + ", ");
+        document.write(box.size + ", ");
+        document.write(box.amount + "<br><hr>");
+
+        document.write("Box : " + box.color + "<br>");
+        document.write("Box-Size : " + box.size + "<br>");
+        document.write("Box-Amount : " + box.amount + "<br><hr>");
+
+        box.fill();
+        document.write(
+          "document.write()로 amount 프로퍼티 값 호출" + box.fill() + "<br>");
+
+        box.consume();
+        document.write(
+          "document.write()로 amount 프로퍼티 값 호출" + box.consume() + "<br><hr>");
+          
+          if (user == 0) 
+            document.write("깜짝퀴즈 결과!! 정답입니다." + "<br>");
+          else
+            document.write("깜짝퀴즈 결과!!" + "<br>" + "아닙니다! 답은 <strong>0</strong> 입니다." + "<br>");
+            
+          if (user == 0) 
+            document.body.style.backgroundColor = "lightblue";
+          else 
+            document.body.style.backgroundColor = "lightskyblue";
+      };
+
+    </script>
+  </body>
+</html>
