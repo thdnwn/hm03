@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>hm03 : 나는 누구인가?</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+	<style>
+	  div.box {
+		background: rgb(243, 216, 255); 
+		width: 400px; 
+		height: 445px; 
+		margin-left: -302px;
+		position: absolute; 
+		top: 182px; 
+		left: 55%; 
+		border: 30px solid rgb(255, 253, 255); 
+        border-image: url("media/카드.jpg") 30 round;
+		background-size: 445px;
+	  }
+      div > p {
+		display: inline-block;
+		position: absolute; 
+		width: 30px;
+		height: 50px;
+		font: bold 50px fantasy, serif; 
+		text-align: center;
+	  }
+      #text {
+		display: block;
+		position: absolute;
+		border: white;
+		font-style: oblique;
+		color: rgb(236, 202, 202);
+		left: 80px; 
+		top: 100px;
+		animation: textColorAnimation 1s infinite alternate;
+	  }
+      #text1 {
+		display: block;
+		position: absolute;
+		border: white;
+		font-style: oblique;
+		color: rgb(93, 126, 85);
+		left: 150px; 
+		top: 250px;
+		animation: textColorAnimation2 1s infinite alternate;
+	  }
+	  #text2 {
+		display: block;
+		position: absolute;
+		border: white;
+		font-style: oblique;
+		color: rgb(93, 126, 85);
+		left: 200px; 
+		top: 250px;
+		animation: textColorAnimation 1s infinite alternate;
+	  }
+	  #text3 {
+		display: block;
+		position: absolute;
+		border: white;
+		font-style: oblique;
+	    color: rgb(93, 126, 85);
+		left: 250px; 
+		top: 250px;
+		animation: textColorAnimation2 1s infinite alternate;
+	  }
+	  @keyframes textColorAnimation {
+		from{ color : rgb(26, 94, 26); font-size: 400%; }
+		to{ color : rgb(167, 47, 47); font-size: 300%; }
+	  }
+	  @keyframes textColorAnimation2 {
+		from{ color : rgb(167, 47, 47); font-size: 400%; }
+		to{ color : rgb(26, 94, 26); font-size: 300%; }
+	  }
+	  #hm03 {
+        position: absolute;;
+		bottom: 10px;
+		right: 350px;
+		width: 40px;
+		padding: 5px;
+		background: rgb(30, 66, 30);
+		font-family: fantasy;
+		color: white;
+        }
+	</style>
+	<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+  </head>
+<body>
+ <div class="wrap">
+  <header>
+   <h1><a href="https://github.com/thdnwn/hm03" style="color: rgb(105, 85, 143);">hm03</a></h1>
+  </header>
+  <nav id="topMenu"> 
+    <ul> 
+      <li class="topMenuLi"> 
+    <a class="menuLink" href="hm03_who.html">All About Me</a> 
+    <ul class="submenu"> 
+        <li><a href="hm03_datalist.html" class="submenuLink">My Best 3</a>
+        </li> 
+    </ul> 
+    </li>
+    <li class="topMenuLi"> 
+    <a class="menuLink" href="hm03_daily.html">My daily</a> 
+    </li> 
+    <li class="topMenuLi"> 
+    <a class="menuLink" href="hm03_details.html">Society</a> 
+    <ul class="submenu"> 
+        <li><a href="hm03_form.html" class="submenuLink">Create Account</a>
+        </li> 
+    </ul> 
+    </li> 
+    <li class="topMenuLi"> 
+    <a class="menuLink" href="hm03_card.html">X-MAS</a> 
+	</li>  
+	<li class="topMenuLi">
+    <a class="menuLink" href="hm03_fancy_calc.html">Calculate</a> 
+    <ul class="submenu"> 
+      <li><a href="hm03_math.html" class="submenuLink">GUGUDAN</a>
+      </li> 
+    </ul> 
+    </li> 
+  </nav>
+  <article align="center">
+	<div class="box">
+		<img src="media/메리클쓰.gif" width="405" height="450" alt="크리스마스 트리">
+		  <p id="text">
+		   MERRY
+		  </p>
+		  <p id="text1">
+			X
+		  </p>
+		  <p id="text2">
+			-
+		  </p>
+		  <p id="text3">
+		   MAS
+		  </p>
+   	</div>	
+	<div id="hm03">
+		hm03
+	</div>
+   <audio src="media/크리스마스노래.mp3" hidden controls autoplay loop>
+   </audio>
+   <iframe name="main_area" src="" seamless="false" align="center" width="700px" height="600px" frameborder="0px" scrolling="no">
+   </iframe>
+  </article>
+  <aside>
+   <table hidden="440px">
+    <tr>
+		<p align="center">
+			<br>
+			<a href="https://www.instagram.com/?hl=ko" style="color: rgb(105, 85, 143);">instargram</a><br><br>
+		   </p>
+    </tr>
+   </table>
+  </aside>
+  <footer >
+	Copyright namu.wiki, TOPClass, yuchae.tistory.com, www.artic.edu, unikys.tistory.com, twitter by hm03
+	<p>
+        <audio src="media/치누숲.mp3" controls loop ></audio>
+    </p>
+  </footer>
+</body>
+</html>

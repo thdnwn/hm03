@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>hm03 : 나는 누구인가?</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <style>
+      body {
+			  color: thistle;
+      }
+      span {
+        animation-name: homepage;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes homepage {
+        0% {color: rgb(217, 213, 255);}
+        30% {color: white;}
+        50% {color: rgb(217, 213, 255);}
+                
+      }
+      h2 {
+        text-align: center;
+        color: thistle;
+      }
+      li {
+        text-align: center;
+      }
+    </style>
+    <script src="best.js"> //js 파일 불러오기
+    </script>
+    <!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+</head>
+<body>
+ <div class="wrap">
+  <header>
+   <h1><a href="https://github.com/thdnwn/hm03" style="color: rgb(105, 85, 143);">hm03</a></h1>
+  </header>
+  <nav id="topMenu"> 
+    <ul> 
+      <li class="topMenuLi"> 
+    <a class="menuLink" href="hm03_who.html">All About Me</a> 
+    <ul class="submenu"> 
+        <li><a href="hm03_datalist.html" class="submenuLink">My Best 3</a>
+        </li> 
+    </ul> 
+    </li>
+    <li class="topMenuLi"> 
+    <a class="menuLink" href="hm03_daily.html">My daily</a> 
+    </li> 
+    <li class="topMenuLi"> 
+    <a class="menuLink" href="hm03_details.html">Society</a> 
+    <ul class="submenu"> 
+        <li><a href="hm03_form.html" class="submenuLink">Create Account</a>
+        </li> 
+    </ul> 
+    </li> 
+    <li class="topMenuLi"> 
+    <a class="menuLink" href="hm03_card.html">X-MAS</a> 
+    </li>  
+    <li class="topMenuLi">
+    <a class="menuLink" href="hm03_fancy_calc.html">Calculate</a> 
+    <ul class="submenu"> 
+      <li><a href="hm03_math.html" class="submenuLink">GUGUDAN</a>
+      </li> 
+    </ul> 
+    </li>  
+  </nav>
+  <article align="center">
+    <h2><a href="https://www.youtube.com/watch?v=LIQrhm2qk-k" target="main" style="color: rgb(105, 85, 143);">My Best 3
+    </a></h2>
+    <hr>
+    <br>
+        클릭하면 해당 사이트로 갑니다!
+        <br>
+        <br>
+              <select id="site">
+                <option value="https://www.youtube.com/watch?v=FiCyZUt3uz0" selected>레디 플레이어 원
+                <option value="https://www.youtube.com/watch?v=8ugaeA-nMTc">아이언맨
+                <option value="https://www.youtube.com/watch?v=5PSNL1qE6VY">아바타
+                <option value="https://www.youtube.com/watch?v=7UWBYJjuIL0">방탄소년단
+                <option value="https://www.youtube.com/watch?v=POIK1H3L86k">샘 스미스
+                <option value="https://www.youtube.com/watch?v=bjwJ_ysRYU4">루엘
+                <option value="https://www.youtube.com/watch?v=m_o0MpnD7oQ" >오버워치
+                </select>
+                <button onclick="load()">click</button>
+    <br>
+    <br>
+    <br>
+    <p>
+      위 중에서 가장 좋아하는 것만 뽑으면
+      <li>게임은 (<span>오버워치</span>)이다.</li>
+      <li>아티스트는
+        (<span>방탄소년단</span>) 이다.</li>
+      <li>영화는 (<span>레디 플레이어 원</span>) 이다.</li>
+    <br>
+    <button onclick="change()">show/hide</button>
+    </p>
+   <iframe name="main_area" src="" seamless="false" align="center" width="700px" height="500px" frameborder="0px" scrolling="no">
+  </iframe>
+  </article>
+  <aside>
+   <table hidden="440px">
+    <tr>
+     <p align="center">
+      <br>
+      <a href="https://www.instagram.com/?hl=ko" style="color: rgb(105, 85, 143);">instargram</a><br><br>
+     </p>
+    </tr>
+   </table>
+  </aside>
+  <footer>
+    Copyright namu.wiki, TOPClass, yuchae.tistory.com, www.artic.edu, unikys.tistory.com, twitter by hm03
+    <p>
+        <audio src="media/치누숲.mp3" controls loop ></audio>
+    </p>
+  </footer>
+ </div>
+</body>
+</html>

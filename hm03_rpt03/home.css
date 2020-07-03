@@ -1,0 +1,97 @@
+body {
+    margin: 0px; 
+    padding: 0px; 
+    background: rgb(212, 196, 238);
+    text-align: center;
+}
+.wrap {
+    width: 850px; 
+    background: rgb(245, 237, 253); 
+    margin: 0px auto 0px auto;
+}
+header {
+    background: rgb(245, 237, 253); 
+    width: 850px; 
+    height: 80px;
+    text-align: center; 
+    padding: 0.1px 0px 0px 0px;
+}
+a {
+    text-decoration: none;
+}
+#topMenu {
+    height: 50px;
+    width: 1100px;
+}
+#topMenu ul li {
+    list-style: none;
+    color: violet;
+    float: left;
+    background-color: rgb(212, 196, 238);
+    line-height: 30px;
+    width: 154px;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+.menuLink, .submenuLink {
+    text-decoration:none;
+    display: block;
+    width: 154px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} 
+.menuLink {
+    color: white; 
+} 
+.topMenuLi:hover .menuLink {
+    color: violet;
+    background-color: rgb(212, 196, 238);
+} 
+.submenuLink {
+    color: violet;
+    background-color: white;
+    border: solid 0px rgb(212, 196, 238);
+    margin-top: -1px;
+    
+} 
+.submenu {
+    position: absolute;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    transition: height .2s;
+    -webkit-transition: height .2s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정(구버전 크롬/사파리ㅣ) */
+    -moz-transition: height .2s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정(구버전 파이어폭스) */
+    -o-transition: height .2s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정(구버전 오페라) */
+} 
+.topMenuLi:hover .submenu {
+    height: 93px;
+} 
+.submenuLink:hover {
+    color: white;
+    background-color: rgb(212, 196, 238);
+} 
+article {
+    width: 820px; 
+    background: rgb(245, 237, 253); 
+    float: left; 
+    padding: 10px;
+}
+aside {
+    width: 850px; 
+    background: rgb(247, 247, 247); 
+    float: right;
+}
+footer {
+    float: bottom; 
+    width: 850px; 
+    height: 100px;
+    padding: 20px 0px 0px 0px; 
+    background: rgb(229, 206, 252); 
+    color: white; 
+    clear: both; 
+    text-align: center;
+}
